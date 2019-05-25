@@ -1,5 +1,7 @@
 import React from "react";
+import CoolButton from "./CoolButton";
 // import 'bulma/css/bulma.css';
+
 
 function Navbar() {
   return (
@@ -17,18 +19,16 @@ function Navbar() {
           Home
         </a>
 
-        <a  className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample"></a>
-    
-      <div role="button" className="navbar-end">
-        <div className="navbar-item">
-          <div className="buttons">
-            <a className="button is-primary">
-              <strong>Sign up</strong>
-            </a>
-            <a className="button is-light">Log in</a>
+        <a className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample"></a>
+
+        <div role="button" className="navbar-end">
+          <div className="navbar-item">
+            <div className="buttons">
+              <CoolButton isSmall className="is-rounded my-class">Login</CoolButton>
+              <CoolButton isSmall isSuccess>Signup</CoolButton>
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </nav>
   );
